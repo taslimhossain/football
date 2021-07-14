@@ -273,6 +273,7 @@ a {
     /* champion area */
     .champion-area-title h2 {
         font-size: 38px;
+        line-height: 55px;
     }
 
     .champion-area-title h2 span {
