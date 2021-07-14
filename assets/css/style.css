@@ -1,0 +1,355 @@
+/* --- google fonts import --- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* --- common css style ---*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+}
+h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191f;
+}
+p,
+a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+p {
+    color: #6c6c6c;
+}
+a {
+    text-decoration: none;
+}
+.btn-button {
+    background-color: #e02c6d;
+    align-items: center;
+    padding: 10px 24px;
+    color: #ffffff;
+    border: 3px solid #e02c6d;
+}
+.btn-button:hover {
+    border: 3px solid #e02c6d;
+    background: #ffffff;
+    color: #e02c6d;
+    box-shadow: 0px 0px 40px rgb(224 44 109 / 17%);
+}
+/* --- header area css style --- */
+.hero-area {
+    background-color: #2d25a0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: movecolor 10s ease-in-out 0.5s infinite;
+}
+@keyframes movecolor {
+    from {
+        background-color: #16a085;
+    }
+    to {
+        background-color: #2d25a0;
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.nav-menu {
+    display: flex;
+}
+.nav-menu a {
+    color: #fff;
+    padding-right: 36px;
+}
+.nav-menu a:hover {
+    color: #e02c6d;
+}
+/* --- header content css style --- */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 86px 0;
+}
+.header-content-data {
+    padding-right: 120px;
+}
+.header-content-data h1 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 27px;
+}
+.content-image {
+    transform: rotate(0deg);
+    transition: 3s ease all;    
+}
+.content-image img {
+    width: 550px;
+}
+.hero-area:hover .content-image {
+    transform: rotate(30deg);
+}
+
+/* players  */
+.container {
+    width: 1164px;
+    margin: 0 auto;
+    padding-left:15px;
+    padding-right:15px;
+    box-sizing: border-box;
+}
+.players-area {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.player {
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img {
+    width: 100%;
+}
+.player h3 {
+    margin: 10px 0;
+    color: #18191f;
+}
+.player:hover h3 {
+    color: #e02c6d;
+}
+/* --- highlights area --- */
+.highlights-area {
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+.highlight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.highlight-content, .highlight-images {
+    width: 50%;
+}
+
+.highlight-content {
+    padding-right: 66px;
+}
+.highlight-content h2 {
+    margin: 8px 0px;
+}
+.highlight-content p {
+    margin-bottom: 35px;
+}
+
+.highlight-images img {
+    width: 100%;
+}
+
+/* --- champion area --- */
+.champion-area-content {
+    width: 60%;
+    margin: 0 auto;
+}
+.champion-area-title {
+    text-align: center;
+}
+.champion-area-title h2 {
+    margin: 0 0 20px 0;
+}
+.champion-area-title h2 span {
+    color: #e02c6d;
+    font-size: 36px;
+}
+
+.champion-area-content img {
+    width: 100%;
+}
+.champion-area-content h3 {
+    margin: 20px 0 0 0;
+}
+
+/* --- gallery area css style ---  */
+.gallery-area {
+    padding: 70px 0px;
+}
+.gallery-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 10px;
+}
+.gallery-title h2 {
+    margin: 0 0 20px 0;
+}
+.gallery-item img {
+    width: 100%;
+}
+
+/* --- footer css style --- */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 483px;
+}
+.social-media {
+    display: flex;
+}
+.social-media a {
+    background-color: #e7e7e8;
+    border-radius: 50px;
+    margin: 10px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media a i {
+    color: #969bab;
+}
+.social-media a:hover i {
+    color: #e02c6d;
+}
+.copyrigry p {
+    color: #000000;
+}
+
+/* --- Responsive css style --- */
+
+/* Tablet & Mobile Layout: 768px. */
+@media only screen and (max-width: 1199px) {
+
+    .container {
+        width: 100%;
+    }
+
+    /* header area */
+    .content-image img {
+        width: 230px;
+    }
+
+    .navigation {
+        display: none;
+    }
+    /* players area */
+    .players-area {
+        padding-bottom: 0px;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* highlight area */
+    .highlight-content h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    /* champion area */
+    .champion-area-title h2 {
+        font-size: 38px;
+    }
+
+    .champion-area-title h2 span {
+        font-size: 18px;
+    }
+    .champion-area-content {
+        width: 80%;
+    }
+
+
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+    /* header area */
+    .hero-area {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .hero-area-content {
+        width: 760px;
+        padding-top: 12px;
+    }
+    .nav-menu{
+        visibility: hidden;
+    }
+    .header-content {
+        display: flex;
+        padding: 20px 0;
+        flex-direction: column;
+    }
+    .content-image img {
+        width: 230px;
+        margin-top: 70px;
+    }   
+    .header-content-data {
+        padding-right: 0px;
+    }
+    .header-content-data h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    /* players area */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* highlight area */
+    .highlight {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .highlight-content, .highlight-images {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .champion-area-content {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* footer area */
+    .footer-logo img {
+        width: 200px;
+    }
+
+    .footer-content {
+        padding-bottom: 50px;
+    }
+
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
